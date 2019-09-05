@@ -1,0 +1,15 @@
+service test
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/shellcode_writer/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = shellcode_writer
+        port = 4001
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}

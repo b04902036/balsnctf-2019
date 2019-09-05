@@ -1,0 +1,8 @@
+test:
+    build: ./
+    volumes:
+        - /home/jason/ctf/balsnCTF/balsn-ctf-challenges/challenges/028-shellcode-writer:/home/jason:ro
+    ports:
+        - "4001:4001"
+    expose:
+        - "4001"
